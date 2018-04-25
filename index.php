@@ -1,3 +1,45 @@
+<?php
+    $pet1 = [
+        'name' => 'Chew Barka',
+        'breed' => 'Bichon',
+        'age'  => '2 years',
+        'weight' => 8,
+        'bio'   => 'The park, The pool or the Playground - I love to go anywhere! I am really great at... SQUIRREL!',
+        'filename' => 'pet1.png'
+    ];
+    $pet2 = [
+        'name' => 'Spark Pug',
+        'breed' => 'Pug',
+        'age'  => '1.5 years',
+        'weight' => 11,
+        'bio'   => 'You want to go to the dog park in style? Then I am your pug!',
+        'filename' => 'pet2.png'
+    ];
+    $pet3 = [
+        'name' => 'Pico de Gato',
+        'breed' => 'Bengal',
+        'age'  => '5 years',
+        'weight' => 9,
+        'bio'   => 'Oh hai, if you do not have a can of salmon I am not interested.',
+        'filename' => 'pet3.png'
+    ];
+
+    $pancake = [
+        'name' => 'Pancake the Bulldog',
+        'breed' => 'Bulldog',
+        'age' => '1 year',
+        'weight' => 9,
+        'bio' => 'Lorem Ipsum',
+        'filename' => 'pancake.png'
+    ];
+
+    $pets = [$pet1, $pet2, $pet3, $pancake];
+    $pets = array_reverse($pets);
+
+    $cleverWelcomeMessage = 'All the love, none of the crap!';
+    $pupCount = count($pets);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,10 +107,6 @@
 
     <div class="jumbotron">
         <div class="container">
-            <?php
-                $cleverWelcomeMessage = 'All the love, none of the crap!';
-                $pupCount = rand(50,100);
-            ?>
 
             <h1><?php echo ucwords($cleverWelcomeMessage); ?></h1>
 
@@ -77,54 +115,25 @@
             <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
         </div>
     </div>
-
-    <?php
-        $pet1 = 'Chew Barka';
-        $pet2 = 'Spark Pug';
-        $pet3 = 'Pico de Gato';
-
-        $pancake = array(
-            'name' => 'Pancake the Bulldog',
-            'age' => '1 year',
-            'weight' => 9,
-            'bio' => 'Lorem Ipsum',
-            'filename' => 'pancake.png'
-        );
-        $pancake['breed'] = 'Bulldog';
-
-        $pets = [$pet1, $pet2, $pet3];
-        $pets[] = 'Kitty Gaga';
-    ?>
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 pet-list-item">
-                <h2><?php echo $pancake['name']; ?></h2>
+            <?php foreach ($pets as $cutePet) { ?>
+                <div class="col-lg-4 pet-list-item">
+                    <h2><?php echo $cutePet['name']; ?></h2>
 
-                <img src="/images/<?php echo $pancake['filename']; ?>" class="img-rounded">
+                    <img src="/images/<?php echo $cutePet['filename']; ?>" class="img-rounded">
 
-                <blockquote class="pet-details">
-                    <span class="label label-info"><?php echo $pancake['breed']; ?></span>
-                    <?php echo $pancake['age']; ?>
-                    <?php echo $pancake['weight']; ?> lbs
-                </blockquote>
+                    <blockquote class="pet-details">
+                        <span class="label label-info"><?php echo $cutePet['breed']; ?></span>
+                        <?php echo $cutePet['age']; ?>
+                        <?php echo $cutePet['weight']; ?> lbs
+                    </blockquote>
 
-                <p>
-                    <?php echo $pancake['bio']; ?>
-                </p>
-            </div>
-            <?php
-                foreach ($pets as $pet) {
-                    echo '<div class="col-lg-4">';
-                    echo '<h2>';
-                    echo $pet;
-                    echo '</h2>';
-                    echo '<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                    condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
-                    euismod. Donec sed odio dui. </p>';
-                    echo '<p><a class="btn btn-default" href="#">View details &raquo;</a></p>';
-                    echo '</div>';
-                }
-            ?>
+                    <p>
+                        <?php echo $cutePet['bio']; ?>
+                    </p>
+                </div>
+            <?php } ?>
         </div>
 
         <hr>
