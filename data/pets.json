@@ -45,5 +45,45 @@
         "bio": "He's a Rascal!",
         "age": "",
         "image": ""
+    },
+    {
+        "name": "Fido",
+        "breed": "Weiner dog",
+        "weight": "15",
+        "bio": "",
+        "age": "",
+        "image": ""
+    },
+    {
+        "name": "Fido",
+        "breed": "Weiner dog",
+        "weight": "15",
+        "bio": "",
+        "age": "",
+        "image": ""
+    },
+    {
+        "name": "Fido",
+        "breed": "Weiner dog",
+        "weight": "15",
+        "bio": "",
+        "age": "",
+        "image": ""
+    },
+    {
+        "name": "test",
+        "breed": "test",
+        "weight": "10",
+        "bio": "",
+        "age": "",
+        "image": ""
+    },
+    {
+        "name": "Waffle",
+        "breed": "Dog",
+        "weight": "30",
+        "bio": "He's not eatable.",
+        "age": "",
+        "image": ""
     }
 ]
