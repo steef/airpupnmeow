@@ -1,4 +1,10 @@
 <?php
+
+    $pdo = new PDO('mysql:dbname=air_pup;host=localhost', 'root', 'root');
+    $result = $pdo->query('SELECT * FROM pet');
+    $rows = $result->fetchAll();
+    var_dump($rows);
+
     require 'lib/functions.php';
     $pets = get_pets();
 
