@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c193849-3ca9-4d2a-a73a-decdf73fd7eb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/pets_new.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pets_new.php" beforeDir="false" afterPath="$PROJECT_DIR$/pets_new.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,16 +34,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pets_new.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pets_new.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pets_new.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+            <state relative-caret-position="36">
+              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/layout/header.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="481">
@@ -95,8 +93,8 @@
         <option value="$PROJECT_DIR$/layout/footer.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/contact.php" />
-        <option value="$PROJECT_DIR$/pets_new.php" />
         <option value="$PROJECT_DIR$/layout/header.php" />
+        <option value="$PROJECT_DIR$/pets_new.php" />
       </list>
     </option>
   </component>
@@ -175,12 +173,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524567676573</updated>
-      <workItem from="1524567678420" duration="10344000" />
+      <workItem from="1524567678420" duration="11124000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10344000" />
+    <option name="totallyTimeSpent" value="11124000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1168" height="1050" extended-state="0" />
@@ -249,17 +247,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pets_new.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/layout/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
           <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pets_new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
         </state>
       </provider>
     </entry>
