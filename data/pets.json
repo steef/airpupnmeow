@@ -29,5 +29,21 @@
         "bio": "Treats and Snoozin!",
         "image": "pancake.png",
         "breed": "Bulldog"
+    },
+    {
+        "name": "Wags",
+        "breed": "Cute Puppy",
+        "weight": "10",
+        "bio": "So Adorable!",
+        "age": "",
+        "image": ""
+    },
+    {
+        "name": "Wags2",
+        "breed": "Cute Puppy",
+        "weight": "10",
+        "bio": "He's a Rascal!",
+        "age": "",
+        "image": ""
     }
 ]

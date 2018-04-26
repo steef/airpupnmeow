@@ -1,7 +1,9 @@
 <?php require 'layout/header.php'; ?>
 <?php
+require 'lib/functions.php';
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    
+
     if (isset($_POST['name'])) {
         $name = $_POST['name'];
     } else {
@@ -26,7 +28,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $bio = '';
     }
 
-    var_dump($name, $breed, $weight, $bio);
+    $pets = get_pets();
+    $newPet = [
+        'name' => $name,
+        'breed' => $breed,
+        'weight' => $weight,
+        'bio' => $bio,
+        'age' => '',
+        'image' => ''
+    ];
+
+    $pets[] = $newPet;
+
+    $json = json_encode($pets, JSON_PRETTY_PRINT);
+    file_put_contents('data/pets.json', $json);
 }
 ?>
     <div class="container">
