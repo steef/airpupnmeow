@@ -1,5 +1,5 @@
 <?php
-    function get_pets($limit) {
+    function get_pets($limit = null) {
         $config = require 'config.php';
 
         $pdo = new PDO($config['database_dsn'],
@@ -8,7 +8,7 @@
         );
 
         $query = 'SELECT * FROM pet';
-        if ($limit != 0) {
+        if ($limit) {
             $query = $query .' LIMIT '.$limit;
         }
         $result = $pdo->query($query);
