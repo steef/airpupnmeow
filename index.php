@@ -24,7 +24,11 @@
         <div class="row">
             <?php foreach ($pets as $cutePet) { ?>
                 <div class="col-lg-4 pet-list-item">
-                    <h2><?php echo $cutePet['name']; ?></h2>
+                    <h2>
+                        <a href="/show.php?id=<?php echo $cutePet['id'] ?>">
+                            <?php echo $cutePet['name']; ?>
+                        </a>
+                    </h2>
 
                     <img src="/images/<?php echo $cutePet['image']; ?>" class="img-rounded">
 
