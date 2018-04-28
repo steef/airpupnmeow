@@ -1,7 +1,8 @@
 <?php
     function get_pets() {
-        $petsJson = file_get_contents('data/pets.json');
-        $pets = json_decode($petsJson, true);
+        $pdo = new PDO('mysql:dbname=air_pup;host=localhost', 'root', 'root');
+        $result = $pdo->query('SELECT * FROM pet');
+        $pets = $result->fetchAll();
 
         return $pets;
     }
