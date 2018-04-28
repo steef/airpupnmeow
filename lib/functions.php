@@ -1,6 +1,12 @@
 <?php
     function get_pets() {
-        $pdo = new PDO('mysql:dbname=air_pup;host=localhost', 'root', 'root');
+        $config = require 'config.php';
+
+        $pdo = new PDO($config['database_dsn'],
+            $config['database_user'],
+            $config['database_pass']
+        );
+
         $result = $pdo->query('SELECT * FROM pet');
         $pets = $result->fetchAll();
 
